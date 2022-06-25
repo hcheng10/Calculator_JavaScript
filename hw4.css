@@ -1,0 +1,46 @@
+label{
+    font-weight:normal;
+}
+
+input[type="button"]{
+    width: 100%;
+}
+
+table, tr, th{
+    border-collapse: collapse;
+    padding: 0px;
+}
+
+#operator_area, #first_value_area, #second_value_area{
+    vertical-align: bottom
+}
+
+/* Those inputs are wide enough for 8 zeros */
+#first_value, #second_value{
+    width: 80px;
+}
+
+#value2_filedset{
+    position: relative;
+}
+
+#Disable_Enabl{
+    position:absolute;
+    bottom: 0;
+    right: 0;
+}
+
+table#parent{
+    position: relative;
+}
+
+p#result{
+    position:absolute;
+    bottom: 0;
+    margin-bottom: 0px;
+    white-space: nowrap;
+}
+
+#compute, #Disable_Enabl{
+    width: fit-content;
+}

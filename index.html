@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title> Simple Calculator </title>
+        <link rel="stylesheet" type="text/css" href="hw4.css?v=1" />
+        <script src="hw4.js?v=1" defer></script>
+    </head>
+
+    <body>
+        <!-- title and subtitle-->
+        <header>
+            <h2> Simple Calculator </h2>
+        </header>
+        
+        <main>
+            <form>
+            <table id="parent">
+                <td>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <!-- first_value block-->
+                                <th id="first_value_area">
+                                    <fieldset>
+                                        <label for="first_value">First value:</label>
+                                        <input id="first_value" type="text" name="numbers1" value=""/>
+                                        <br> <!-- this break line tags make sure number buttons appearing beneath this input field -->
+
+                                        <!-- calculator buttons -->
+                                        <table>
+                                            <tr>
+                                                <th>
+                                                    <input type = "button" value = "1" class="button"/>  
+                                                </th>
+                                                <th>
+                                                    <input type = "button" value = "2" class="button"/> 
+                                                </th>
+                                                <th>
+                                                    <input type = "button" value = "3" class="button"/> 
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    <input type = "button" value = "4" class="button"/> 
+                                                </th>
+                                                <th>
+                                                    <input type = "button" value = "5" class="button"/> 
+                                                </th>
+                                                <th>
+                                                    <input type = "button" value = "6" class="button"/> 
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    <input type = "button" value = "7" class="button"/> 
+                                                </th>
+                                                <th>
+                                                    <input type = "button" value = "8" class="button"/> 
+                                                </th>
+                                                <th>
+                                                    <input type = "button" value = "9" class="button"/> 
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    <input type = "button" value = "-" class="button"/> 
+                                                </th>
+                                                <th>
+                                                    <input type = "button" value = "0" class="button"/> 
+                                                </th>
+                                                <th>
+                                                    <input type = "button" value = "." class="button"/> 
+                                                </th>
+                                            </tr>
+                                        </table>
+                                    </fieldset>
+                                </th> 
+                                
+                                <!-- operations block-->
+                                <th id="operator_area">
+                                    <fieldset>
+                                        <!-- for and id must be match -->
+                                        <label for="plus"> + </label>
+                                        <input type="radio" id="plus" name="operator" value="+" checked/>
+                                        <br>
+                                        <label for="minus"> - </label>
+                                        <input type="radio" id="minus" name="operator" value="-"/>
+                                        <br>
+                                        <label for="multiple"> x </label>
+                                        <input type="radio" id="multiple" name="operator" value="*"/>
+                                        <br>
+                                        <label for="divide"> &divide; </label>
+                                        <input type="radio" id="divide" name="operator" value="/"/>
+                                    </fieldset>
+                                </th>
+
+                                <!-- second_value block-->
+                                <th id="second_value_area">
+                                    <fieldset id="value2_filedset">
+                                        <label for="second_value">Second value:</label>
+                                        <input id="second_value" type="text" name="numbers2" value=""/>
+
+                                        <input type = "button" id="compute" value="Compute"/>
+                                        <br> <!-- this break line tags make sure number buttons appearing beneath this input field -->
+
+                                        <!-- calculator buttons -->
+                                        <table>
+                                            <tr>
+                                                <th>
+                                                    <input type = "button" value = "1" class="button"/>  
+                                                </th>
+                                                <th>
+                                                    <input type = "button" value = "2" class="button"/> 
+                                                </th>
+                                                <th>
+                                                    <input type = "button" value = "3" class="button"/> 
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    <input type = "button" value = "4" class="button"/> 
+                                                </th>
+                                                <th>
+                                                    <input type = "button" value = "5" class="button"/> 
+                                                </th>
+                                                <th>
+                                                    <input type = "button" value = "6" class="button"/> 
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    <input type = "button" value = "7" class="button"/> 
+                                                </th>
+                                                <th>
+                                                    <input type = "button" value = "8" class="button"/> 
+                                                </th>
+                                                <th>
+                                                    <input type = "button" value = "9" class="button"/> 
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    <input type = "button" value = "-" class="button"/> 
+                                                </th>
+                                                <th>
+                                                    <input type = "button" value = "0" class="button"/> 
+                                                </th>
+                                                <th>
+                                                    <input type = "button" value = "." class="button"/> 
+                                                </th>
+                                            </tr>
+                                        </table>
+
+                                        <!-- Disable/Enable button -->
+                                        <input type = "button" id="Disable_Enabl" value="Disable/Enabl"/>
+                                    </fieldset>
+                                </th>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+                <td>
+                    <!-- result -->
+                    <p id="result"> Result is: </p>
+                </td>
+            </table>    
+                
+            </form>
+        </main>
+
+        <footer> 
+            <small>
+                &copy; <em id="date"> 2022 </em>Harvey Cheng
+            </small> 
+        </footer>
+    </body> 
+</html>
